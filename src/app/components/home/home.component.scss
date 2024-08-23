@@ -1,23 +1,74 @@
-.main-section{
+@import url("../../../color-variables.scss");
+
+.main-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    padding: 0 70px;
+
+    h1 {
+        font-size: 65px;
+        font-weight: 900;
+        color: #F0F0F0;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: 700;
+        color: #B79FF7;
+        text-transform: uppercase
+    }
 }
 
-span{
-    font-size: 20px;
-    font-weight: 700;
+.benefit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 70px;
+    gap: 70px;
+
+    .benefit-data {
+        border-bottom: 10px solid #5222D0;
+        padding-bottom: 40px;
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+            color: #F0F0F0;
+        }
+    }
+
+    p {
+        font-size: 40px;
+        color: #F0F0F0;
+        font-style: italic;
+        font-weight: 300;
+
+        b {
+            background: -webkit-linear-gradient(180deg, #B79FF7, #5222D0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: normal;
+        }
+    }
 }
 
-h1{
-    font-size: 72px;
-    font-weight: 900;
+.cta-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (min-width: 1000px){
-    .main-section{
+@media (min-width: 1000px) {
+    .main-section {
+        flex-direction: row;
+    }
+
+    .benefit-section {
         flex-direction: row;
     }
 }
